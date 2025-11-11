@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env & secrets
+.env
+
+# Data (keep raw datasets out of the repo)
+data/*
+!data/README.md
+
+# IDE settings
+.vscode/
+.idea/
