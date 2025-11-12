@@ -5,7 +5,7 @@ from app.models import Feedback, Product
 from sqlalchemy import func, case
 
 
-router = APIRouter(prefix="/feedback/summary", tags=["Feedback Summary"])
+router = APIRouter(prefix="/summary", tags=["Summary"])
 
 @router.get("/overall")
 def sentiment_overall_summary(db: Session = Depends(get_db)):

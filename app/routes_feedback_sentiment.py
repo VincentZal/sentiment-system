@@ -9,7 +9,7 @@ from typing import List, Optional
 from datetime import date
 from app.schemas import FeedbackJoined, ProductSentiment, TrendPoint, TrendSeries
 
-router = APIRouter(prefix="/feedback/sentiment", tags=["Sentiment"])
+router = APIRouter(prefix="/sentiment", tags=["Sentiment"])
 
 # helpers for counts
 POS = func.sum(case((Feedback.sentiment_label == "positive", 1), else_=0)).label("positive")
